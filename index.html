@@ -20,11 +20,20 @@
     <section class="container">
       <div>
         <p class="title"><span style="font-weight: bold;">Daniel Fortuné, 20 ans, basé en région parisienne.</span></p>
-        <p
+        <div class="pc">
+        <p 
           >Étudiant en première année à <a href="https://ecole-decode.fr/" target="_blank">.decode</a> se spécialisant dans le développement web.
           <br />
           Créatif, bilingue et pluri-disciplinaire je suis également <span id="auto-type"></span> 
         </p>
+        </div>
+        <div class="mobile">
+        <p 
+          >Étudiant en première année à <a href="https://ecole-decode.fr/" target="_blank">.decode</a> se spécialisant dans le développement web.
+          <br />
+          Créatif, bilingue et pluri-disciplinaire je suis également <br><span id="auto-type2"></span> 
+        </p>
+        </div>
       </div>
 
       <div class="contact">
@@ -42,6 +51,15 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
       var typed = new Typed("#auto-type", {
+        strings: ["compositeur.", "chanteur.", "apprenti DJ.", "graphiste.", "un 'ai art' hater."],
+        typeSpeed: 40,
+        backSpeed: 100,
+        loop: true,
+        showCursor: false,
+      });
+    </script>
+    <script>
+      var typed = new Typed("#auto-type2", {
         strings: ["compositeur.", "chanteur.", "apprenti DJ.", "graphiste.", "un 'ai art' hater."],
         typeSpeed: 40,
         backSpeed: 100,

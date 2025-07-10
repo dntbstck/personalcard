@@ -88,6 +88,10 @@ a, p{
     
 }
 
+.mobile{
+    display: none;
+}
+
 a{
     text-decoration: none;
     color: #4f4d4da2;
@@ -101,6 +105,14 @@ a:hover{
 
 
 @media (max-width : 970px) {
+
+    .pc{
+        display: none;
+    }
+
+    .mobile{
+        display: flex;
+    }
 
         .svg{
             pointer-events: none;
