@@ -82,7 +82,10 @@ p {
 
 .svg:hover {
   filter: drop-shadow(1px 1px 30px rgb(4, 105, 25));
-
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
   fill: rgb(38, 185, 111);
   transform: rotate(150deg);
 }
