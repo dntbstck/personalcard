@@ -104,9 +104,10 @@ a:hover{
 
         .svg{
             pointer-events: none;
+            height: 3em;
         }
     .container{
-        max-width: 680px;
+        max-width: 700px;
     }
     a, p{
         font-size: .8rem;
