@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.container{
+    max-width: 800px;
+    height: 100svh;
+    margin: 0 auto;
+    padding: 4rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    z-index: 1;
+}
+
+
+
+body{
+    font-family: inter, sans serif;
+    color: #4f4d4d;
+    background-color: #fdfcfc;
+}
+
+a, p{
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+:root{
+    --linkcolor:#d04e59;
+    --textcolor: #4f4d4d;
+}
+
+
+
+.contact{
+    width: 100%;
+    margin: 1em 0;
+    padding: 2em 0;
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    
+}
+
+.contact p{
+    border-bottom: 1px dotted #e5e5e5;
+    
+}
+
+.svg-swap{
+    position: absolute;
+    pointer-events: none;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 3em 3em;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+}
+
+.svg{
+    position: absolute;
+    object-fit: contain;
+    height: 5em;
+    fill: var(--linkcolor);
+    filter: drop-shadow(1px 1px 30px #d04e59);
+    z-index: 1;
+    cursor: pointer;
+    pointer-events: visible;
+    border: none;
+    transition: all .5s ease-in-out;
+}
+
+.svg:hover{
+    filter: drop-shadow(1px 1px 30px rgb(4, 105, 25));
+    
+    fill: rgb(38, 185, 111);
+    transform: rotate(150deg);
+    
+}
+
+a{
+    text-decoration: none;
+    color: #4f4d4da2;
+    cursor: pointer;
+    transition: color .2s ease-in-out;
+}
+
+a:hover{
+    color: var(--linkcolor);
+}
+
+
+@media (max-width : 970px) {
+
+        .svg{
+            pointer-events: none;
+        }
+    .container{
+        max-width: 680px;
+    }
+    a, p{
+        font-size: .8rem;
+        
+    }
+
+    p{
+        color: var(--textcolor);
+    }
+
+    a{
+        color: var(--linkcolor);
+    }
+    
+}
